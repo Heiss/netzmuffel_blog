@@ -9,7 +9,7 @@ Content entered directly below the header but before the first section heading i
 
 == First level heading
 
-test
+Test
 This is a paragraph with a *bold* word and an _italicized_ word.
 
 .Image caption
