@@ -1,0 +1,18 @@
+#!/bin/sh
+
+ad="bundle exec asciidoctor"
+
+$ad --trace --verbose \
+  --base-dir ./content \
+  --no-header-footer \
+  --attribute nofooter \
+  --attribute docinfo=shared \
+  --attribute icons=font \
+  --attribute source-highlighter=highlightjs \
+  --attribute sectlinks \
+  --attribute sectanchors \
+  --attribute figure-caption! \
+  --attribute toc-title! \
+  --require asciidoctor-diagram \
+  --require asciidoctor-html5s \
+  -

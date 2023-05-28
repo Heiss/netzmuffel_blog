@@ -1,0 +1,29 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "hugo-book"
+
+[markup]
+[markup.asciidocExt]
+backend = 'html5'
+extensions = []
+failureLevel = 'fatal'
+noHeaderOrFooter = true
+preserveTOC = false
+safeMode = 'unsafe'
+sectionNumbers = false
+trace = false
+verbose = false
+workingFolderCurrent = false
+
+[markup.asciidocExt.attributes]
+
+[security]
+enableInlineShortcodes = false
+
+[security.exec]
+allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
+
+[module]
+[[module.imports]]
+path = 'github.com/alex-shpak/hugo-book'
