@@ -1,11 +1,49 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "hugo-book"
+baseURL = 'https://www.netzmuffel.de/'
+title = 'Netzmuffel'
+author = "Peter Heiss"
+copyright = ""
+paginate = 8
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+theme = "m10c"
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 2
+[[menu.main]]
+identifier = "about"
+name = "Me"
+url = "/about/"
+weight = 4
+[[menu.main]]
+identifier = "categories"
+name = "Cats"
+url = "/categories/"
+weight = 3
 
 [params]
-BookTheme = "dark"
-BookSection = 'docs'
+author = "Peter Heiss"
+description = "Technical writing and leadership ideas in a single blog."
+menu_item_separator = " - "
+avatar = "identicon.png"
+[[params.social]]
+icon = "github"
+name = "Github"
+url = "https://github.com/Heiss"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
 
 [markup]
 [markup.asciidocExt]
@@ -27,3 +65,31 @@ enableInlineShortcodes = false
 
 [security.exec]
 allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
+
+
+[privacy]
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = false
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services]
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true

@@ -1,7 +1,5 @@
 #!/bin/sh
 
-bundle
-
 ad="bundle exec asciidoctor"
 
 $ad --trace --verbose \

@@ -15,8 +15,18 @@
          with pkgs;
          {
            devShells.default = mkShell {
-             buildInputs = [ hugo bundler ];
-           };
+             buildInputs = [ hugo bundler
+             (writeScriptBin "build"
+              ''
+                #!${pkgs.stdenv.shell}
+                env PATH=$PWD/bin:$PATH hugo --gc --minify
+              '')
+             (writeScriptBin "server"
+              ''
+                #!${pkgs.stdenv.shell}
+                env PATH=$PWD/bin:$PATH hugo server --disableFastRender
+              '')];
+            };
          }
        );
  }
