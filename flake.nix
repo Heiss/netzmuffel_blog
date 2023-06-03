@@ -19,11 +19,13 @@
              (writeScriptBin "build"
               ''
                 #!${pkgs.stdenv.shell}
+                bundle install
                 env PATH=$PWD/bin:$PATH hugo --gc --minify
               '')
              (writeScriptBin "server"
               ''
                 #!${pkgs.stdenv.shell}
+                bundle install
                 env PATH=$PWD/bin:$PATH hugo server --disableFastRender
               '')];
             };
