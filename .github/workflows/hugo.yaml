@@ -48,8 +48,7 @@ jobs:
         # Mostly to avoid GitHub rate limiting
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-          with:
-            github_access_token: ${{ secrets.GITHUB_TOKEN }}
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
         # Note: this would only work if Cargo is included in the Nix shell
       - name: Build with Hugo
         env:
