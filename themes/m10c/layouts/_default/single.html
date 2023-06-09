@@ -28,8 +28,25 @@
     <div class="post-content">
       {{ .Content }}
     </div>
+    {{- if ne .Type "page" }}
     <div class="post-footer">
-      {{ template "_internal/disqus.html" . }}
+    <script src="https://giscus.app/client.js"
+            data-repo="heiss/netzmuffel_blog"
+            data-repo-id="R_kgDOJq9Esg"
+            data-category="Q&A"
+            data-category-id="DIC_kwDOJq9Ess4CXFaG"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
     </div>
+    {{- end }}
   </article>
 {{ end }}
