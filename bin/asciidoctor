@@ -8,7 +8,7 @@ $ad --trace --verbose \
   --attribute nofooter \
   --attribute docinfo=shared \
   --attribute icons=font \
-  --attribute source-highlighter=highlightjs \
+  --attribute source-highlighter=rouge \
   --attribute sectlinks \
   --attribute sectanchors \
   --attribute figure-caption! \

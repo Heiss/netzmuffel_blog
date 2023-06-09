@@ -12,7 +12,11 @@ GEM
     asciidoctor-html5s (0.5.1)
       asciidoctor (>= 1.5.7, < 3.0)
       thread_safe (~> 0.3.4)
+    asciidoctor-rouge (0.4.0)
+      asciidoctor (>= 1.5.6, < 2.1)
+      rouge (>= 2.2, < 4)
     rexml (3.2.5)
+    rouge (3.30.0)
     thread_safe (0.3.6)
 
 PLATFORMS
@@ -22,6 +26,7 @@ DEPENDENCIES
   asciidoctor
   asciidoctor-diagram
   asciidoctor-html5s
+  asciidoctor-rouge
 
 BUNDLED WITH
    2.4.13

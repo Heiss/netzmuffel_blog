@@ -1,0 +1,19 @@
++++
+title = "[DE] Agile Arbeit mit Team Topologies umsetzen"
+description = "Meine Gedanken zu diesem Thema"
+author = "Peter Heiss"
+tags = [
+"thoughts", "agile", "teamwork", "leadership"
+]
+categories = [ "blog", "german" ]
+date = "2023-06-03"
++++
+
+Agile Arbeitsmethoden sind aktuell überall in den Managementmedien. Niemand der sich nur ansatzweise mit dem Thema "Führung" oder "Teamarbeit" beschäftigt, wird daran vorbeikommen. In diesem Beitrag möchte ich meine Erfahrung mit agiler Arbeit kritisch reflektieren und meine Gedanken bei der Umsetzung mittels Team Topologies teilen.
+Zu Beginn möchte ich einmal für mich diese beiden Dinge definieren.
+
+== Was ist agile Arbeit?
+
+== Was ist Team Topologies?
+
+=== Wie kann agile Arbeit mit Team Topologies umgesetzt werden?
