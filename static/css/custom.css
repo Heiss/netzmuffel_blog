@@ -20,3 +20,28 @@ table{border-collapse:collapse;border-spacing:0}
 pre .conum[data-value]{position:relative;top:-.125em}
 b.conum *{color:inherit!important}
 .conum:not([data-value]):empty{display:none}
+
+/* copy button */
+pre.highlight:hover > button {
+    opacity: 1;
+}
+
+pre.highlight > button:active,
+pre.highlight > button:focus {
+    opacity: 1;
+}
+
+pre.highlight > button {
+    opacity: 0;
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+}
+
+pre.highlight {
+    position: relative;
+}
+
+pre.highlight > code {
+    overflow: hidden;
+}

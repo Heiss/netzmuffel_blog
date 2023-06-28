@@ -36,6 +36,7 @@ description = "Technical writing and leadership ideas in a single blog."
 menu_item_separator = " - "
 avatar = "identicon.png"
 custom_css = ["css/molokai.css","css/custom.css"]
+custom_js = ["js/custom.js"]
 [[params.social]]
 icon = "github"
 name = "Github"
